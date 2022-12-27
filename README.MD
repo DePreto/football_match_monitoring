@@ -37,7 +37,8 @@
 
 - Создайте на своем компютере папку проекта
 - Склонируйте этот репозиторий в папку проекта `git clone https://github.com/...`
-- Создайте файл `.env` и добавьте в него переменные окружения:
+- Настройка пользовательских прав `Airflow`: `echo -e "AIRFLOW_UID= $( id -u ) \nAIRFLOW_GID=0" > .env`
+- Дополните файл `.env` переменными окружения:
 ```
 POSTGRES_USER=airflow
 POSTGRES_PASSWORD=airflow
@@ -55,7 +56,6 @@ PGADMIN_DEFAULT_PASSWORD = password
 PGADMIN_LISTEN_ADDRESS = [0.0.0.0.]
 PGADMIN_LISTEN_PORT=8081
 ```
-- Настройка пользовательских прав `Airflow`: `echo -e "AIRFLOW_UID= $( id -u ) \nAIRFLOW_GID=0" > .env`
 - Запустите сборку командой `docker-compose up --build -d` из Терминала из папки с проектом 
 
 **Для разработки**:
