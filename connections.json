@@ -1,0 +1,7 @@
+{
+  "TESTAPI": {
+    "conn_type": "HTTP",
+    "host": "app.sportdataapi.com/api/v1/soccer/matches",
+    "schema": "https"
+  }
+}
